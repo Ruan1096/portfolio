@@ -60,3 +60,5 @@ Interatividade: Efeitos de hover e transition em botões, links sociais e na bar
 Botões Personalizados: Criação de botões com estilo "pílula" (fixed) e bordas sólidas (outline) para navegação intuitiva.
 
 Previa:
+
+<img width="953" height="415" alt="image" src="https://github.com/user-attachments/assets/3ba0aedc-57e1-49bf-907e-cd8aa3b9ae64" />
