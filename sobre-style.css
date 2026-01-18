@@ -1,0 +1,161 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+     padding: 20px 10%;
+
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f97316; /* Laranja da sua foto */
+}
+
+/* Configurações da Seção Sobre */
+.about-section {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap; /* Para ficar responsivo no celular */
+}
+
+/* Estilização da Imagem */
+.about-image {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px; /* Bordas arredondadas modernas */
+    box-shadow: 20px 20px 0px #f97316; /* Sombra sólida laranja combinando com a foto */
+}
+
+.image-experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background: #f97316;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilização do Texto */
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-text h2 span {
+    color: #f97316; /* Destaque laranja */
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+.tech-stack ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.tech-stack ul li::before {
+    content: "▹";
+    color: #f97316;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Botão secundário */
+.btn-outline {
+    padding: 12px 30px;
+    border: 2px solid #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #f97316;
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 20px;
+    background-color: rgba(249, 115, 22, 0.9); /* Laranja com leve transparência */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Estilo pílula */
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.back-btn .icon {
+    font-size: 1.2rem;
+}
+
+.back-btn:hover {
+    background-color: #f97316;
+    transform: translateX(-5px); /* Move levemente para a esquerda no hover */
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.3);
+}
+
+/* Esconder o botão se não houver histórico para voltar (opcional) */
+.back-btn:active {
+    transform: scale(0.95);
+}
